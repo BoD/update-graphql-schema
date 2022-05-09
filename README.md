@@ -1,6 +1,6 @@
 # Update GraphQL Schema 🚀
 
-A Github Action that downloads your GraphQL schema from introspection and/or the [Studio registry](https://www.apollographql.com/docs/studio/) and opens a pull request if anything changed.
+A Github Action that downloads your GraphQL schema from [introspection](https://graphql.org/learn/introspection/) and/or the [Studio registry](https://www.apollographql.com/docs/studio/) and opens a pull request if anything changed.
 
 This action supports converting an introspection schema to SDL and vice-versa based on the file extension. We recommend using `.graphqls` to convert to SDL. 
 ### Repository configuration
