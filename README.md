@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: martinbonnin/update-graphql-schema@main
         with:
-          endpoint: "https://kiki-conf.ew.r.appspot.com/graphql"
+          endpoint: "https://example.com/graphql"
           schema: "src/main/graphql/schema.graphqls"
           
           # Optional introspection settings
@@ -60,9 +60,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: martinbonnin/update-graphql-schema@main
         with:
-          endpoint: "https://kiki-conf.ew.r.appspot.com/graphql"
           key: "service:fullstack-tutorial:abc123"
-          
+          schema: "src/main/graphql/schema.graphqls"
+
           # Optional Studio registry settings
           graph: "fullstack-tutorial" # defaults to being parsed from the key
           graph_variant: "production" # default: "current"
