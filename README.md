@@ -28,9 +28,9 @@ jobs:
           endpoint: "https://example.com/graphql"
           schema: "src/main/graphql/schema.graphqls"
           
-          # Optional introspection settings
+          #  Optional HTTP settings for the download
+          headers: "Authorization: Bearer $token, User-Agent: MyAction" # default: ""
           insecure: "false" # default: "false"
-          headers: "Authorization: Bearer $token, User-Agent: MyAction" # default: "" 
 
           # Optional pull request settings        
           branch: "graphql-schema" # default: "update-schema"
