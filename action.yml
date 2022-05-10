@@ -29,7 +29,7 @@ inputs:
     description: 'A comma separated list of HTTP headers to use while introspecting `endpoint`'
     required: false
   insecure:
-    description: 'Do not verify certificates during introspection'
+    description: 'Do not verify certificates during download'
     required: false
     default: 'false'
   branch:
