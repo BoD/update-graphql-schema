@@ -84,7 +84,7 @@ fun run() {
             now.minute
         )
     }
-    println("headers = ${getOptionalInput("headers")}")
+    println("headers=${getOptionalInput("headers")}")
     val headers: Map<String, String> = getOptionalInput("headers")?.let { headerJsonStr ->
         try {
             (Json.parseToJsonElement(headerJsonStr) as JsonObject).mapValues { it.value.toString() }
@@ -92,7 +92,7 @@ fun run() {
             error("'headers' must be a JSON object of the form {\"header1\": \"value1\", \"header2\": \"value2\"}")
         }
     } ?: emptyMap()
-    println("headers = headers")
+    println("headers=$headers")
 
     SchemaDownloader.download(
         endpoint = getOptionalInput("endpoint"),
